@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
+from .models import About
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
         translation.activate(lang)
@@ -36,3 +37,9 @@ def home(request):
         'fourth_article': Articles.objects.all().order_by('-date')[3:4],
     }
     return render(request,'index.html',data)
+def about(request):
+    data={
+        'title': 'JaBa - About',
+        'about': About.objects.all(),
+    }
+    return render(request, 'about.html',data)

@@ -11,7 +11,8 @@ urlpatterns = [
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     path('admin/', admin.site.urls),
     path('',mainviews.home,name='homepage'),
-    path('article/<int:pk>',articlesViews.ArticleDetail.as_view(),name='articlepage')
+    path('article/<int:pk>',articlesViews.ArticleDetail.as_view(),name='articlepage'),
+    path('about/',mainviews.about,name='aboutpage'),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),

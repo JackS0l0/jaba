@@ -3,7 +3,11 @@
     <main>
         <div class="mainClass">
             <div class="aboutClass">
-                
+                {% for post in about %}
+                    <div class="abouttxt">
+                        {{post.txt|safe}}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </main>

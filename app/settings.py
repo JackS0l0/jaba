@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e6=+k7#uxx37bsk(tl*78=+s5e5uj-^^4^bz#0%7&t-#73t+u&'
 DEBUG = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["vercel.app","*"]
 INSTALLED_APPS = [
     'modeltranslation',
     'django.contrib.admin',

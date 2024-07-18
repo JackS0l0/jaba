@@ -149,6 +149,9 @@ body header .headerClass .float2 span .logoid img {
 body header .headerClass .float2 span .logoid:last-child {
   padding-top: 10px;
 }
+body main .mainClass .aboutClass {
+  margin: 3vw 10vw;
+}
 body main .mainClass .breadcrumbclass {
   margin: 3vw;
   display: flex;
