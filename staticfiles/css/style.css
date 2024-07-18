@@ -229,6 +229,9 @@ body main .mainClass .detailClass .postBody blockquote {
   font-family: spacemono;
   margin: 1vw 0;
 }
+body main .mainClass .detailClass .postBody blockquote a {
+  color: white;
+}
 body main .mainClass .trendingNews {
   display: flex;
   align-items: center;
