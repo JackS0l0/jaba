@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block main %}
+    <main>
+        <div class="mainClass">
+            <div class="breadcrumbclass">
+                <li class="btn"><a href="{% url 'homepage' %}">Home</a></li>
+                <p class="btn">/</p>
+                <li class="btn"><a href="{% url 'homepage' %}">{{object.category}}</a></li>
+                <p class="btn">/</p>
+                <li class="btn" aria-current="page">{{object.name}}</li>
+            </div>
+            <div class="detailClass">
+                <div class="postHeader">
+                    <div class="img">
+                        <img src="{{object.img.url}}">
+                        <div class="text">
+                            <p class="titleid">{{object.name}}</p>
+                            <span>
+                                <a href="#">{{object.category}}</a>
+                                <p><i class="bi bi-circle-fill"></i></p>
+                                <p>{{object.date|date:"M d, Y"}}</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="postBody">
+                    {{object.txt|safe}}
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

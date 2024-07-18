@@ -1,0 +1,60 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div class="headerClass">
+        <div class="float0">
+            <a href="#">Big sales in full website and templates. Order now</a>
+            <button class="btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="float1">
+            <span>
+                <button class="btn" id="night-mode-toggle"><img src="../../static/media/moon.png" id="night-mode-icon"></button>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'az' %}">AZ</a></li>
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'en' %}">EN</a></li>
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'ru' %}">РУ</a></li>
+                    </ul>
+                </div>
+            </span>
+            <span>
+                <a href="#" class="btn">{% trans 'Login / Join' %}</a>
+            </span>
+        </div>
+        <hr>
+        <div class="float2">
+            <span>
+                <a href="{% url 'homepage' %}" class="logoid"><img src="../../static/media/lblogo.svg"></a>
+                <a href="{% url 'homepage' %}" class="logoid">JaBa</a>
+            </span>
+            <span>
+                <a href="#" class="btn">{% trans 'Templates' %}</a>
+                <a href="#" class="btn">{% trans 'Blog' %}</a>
+                <a href="#" class="btn">{% trans 'Contact' %}</a>
+                <a href="#" class="btn">{% trans 'About' %}</a>
+            </span>
+            <span>
+                <button class="btn"><i class="bi bi-search"></i></button>
+                <!--  -->
+                <div class="rightMenu">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="logoid"><img src="../../static/media/lblogo.svg" alt=""></div>
+                            <div class="insideBody">
+                                <a href="#" class="btn">{% trans 'Jobs & Vacancies' %}</a>
+                                <a href="#" class="btn">{% trans 'Advertise' %}</a>
+                                <a href="#" class="btn">{% trans 'Form' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+</header>
