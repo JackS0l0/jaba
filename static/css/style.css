@@ -2,6 +2,10 @@
   font-family: nunitosans;
   src: url(../font/NunitoSans_10pt-Regular.ttf);
 }
+@font-face {
+  font-family: spacemono;
+  src: url(../font/SpaceMono-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +63,9 @@ body header .headerClass .float1 {
   justify-content: space-between;
   align-items: center;
 }
+body header .headerClass .float1 span {
+  display: flex;
+}
 body header .headerClass .float1 span a {
   font-size: 1.2vw;
   color: #595d69;
@@ -66,6 +73,7 @@ body header .headerClass .float1 span a {
 body header .headerClass .float1 span .btn {
   padding: 1vw 0;
   font-weight: bold;
+  border: 0;
 }
 body header .headerClass .float1 span .btn:hover {
   color: rgb(77, 148, 253);
@@ -79,7 +87,7 @@ body header .headerClass .float1 span button i {
   font-size: 1.2vw;
 }
 body header .headerClass .float1 span button img {
-  width: 1.7vw;
+  width: 1.4vw;
 }
 body header .headerClass .float2 {
   margin: 0 3vw;
@@ -138,30 +146,45 @@ body header .headerClass .float2 span .logoid img {
   width: 3vw;
   margin-right: 1vw;
 }
+body header .headerClass .float2 span .logoid:last-child {
+  padding-top: 10px;
+}
 body main .mainClass .breadcrumbclass {
   margin: 3vw;
+  display: flex;
 }
-body main .mainClass .postClass .postHeader {
+body main .mainClass .breadcrumbclass .btn {
+  padding: 0.5vw;
+}
+body main .mainClass .detailClass .postHeader {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 2vw;
 }
-body main .mainClass .postClass .postHeader .img {
+body main .mainClass .detailClass .postHeader .img {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-body main .mainClass .postClass .postHeader .img img {
+  overflow: hidden;
   width: 70vw;
   height: 50vh;
   border-radius: 12px;
+}
+body main .mainClass .detailClass .postHeader .img img {
+  width: 70vw;
+  height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(30%);
+  transition: transform 1s;
 }
-body main .mainClass .postClass .postHeader .img .text {
+body main .mainClass .detailClass .postHeader .img img:hover {
+  transform: scale(1.1);
+}
+body main .mainClass .detailClass .postHeader .img .text {
   width: 100%;
   position: absolute;
   display: flex;
@@ -170,24 +193,38 @@ body main .mainClass .postClass .postHeader .img .text {
   align-items: center;
   color: white;
 }
-body main .mainClass .postClass .postHeader .img .text .titleid {
-  font-size: 2vw;
+body main .mainClass .detailClass .postHeader .img .text .titleid {
+  font-size: 2.4vw;
+  font-weight: bold;
+  text-align: center;
 }
-body main .mainClass .postClass .postHeader .img .text a {
+body main .mainClass .detailClass .postHeader .img .text a {
   color: white;
 }
-body main .mainClass .postClass .postHeader .img .text span {
+body main .mainClass .detailClass .postHeader .img .text span {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body main .mainClass .postClass .postHeader .img .text span p {
+body main .mainClass .detailClass .postHeader .img .text span p {
   display: flex;
   align-items: center;
 }
-body main .mainClass .postClass .postHeader .img .text span p .bi {
+body main .mainClass .detailClass .postHeader .img .text span p .bi {
   font-size: 0.4vw;
   margin: 0 1vw;
+}
+body main .mainClass .detailClass .postBody {
+  margin: 3vw;
+}
+body main .mainClass .detailClass .postBody blockquote {
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  color: white;
+  padding: 1vw;
+  border-radius: 12px;
+  font-family: spacemono;
+  margin: 1vw 0;
 }
 body main .mainClass .trendingNews {
   display: flex;
@@ -237,6 +274,7 @@ body main .mainClass .headerNews .block1 .nameBlock {
   padding: 3vw 1vw;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 body main .mainClass .headerNews .block1 .nameBlock a {
   color: white;
@@ -284,6 +322,7 @@ body main .mainClass .headerNews .block2 .float1 .nameBlock {
   display: flex;
   flex-direction: column;
   padding: 1vw;
+  width: 100%;
 }
 body main .mainClass .headerNews .block2 .float1 .nameBlock a {
   color: white;
@@ -333,6 +372,7 @@ body main .mainClass .headerNews .block2 .float2 .nameBlock {
   display: flex;
   flex-direction: column;
   padding: 1vw;
+  width: 100%;
 }
 body main .mainClass .headerNews .block2 .float2 .nameBlock a {
   color: white;
