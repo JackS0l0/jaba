@@ -634,4 +634,10 @@ body.night-mode main .mainClass .postClass .ttClass .newsBlock .info a {
 }
 body.night-mode main .mainClass .postClass .ttClass .questionsBlock a {
   color: white;
+}
+
+@media only screen and (max-width: 999px) {
+  body header .headerClass .float2 span:nth-child(2) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
