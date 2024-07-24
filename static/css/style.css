@@ -637,7 +637,34 @@ body.night-mode main .mainClass .postClass .ttClass .questionsBlock a {
 }
 
 @media only screen and (max-width: 999px) {
+  body header .headerClass .float0 a {
+    font-size: 2vw;
+  }
+  body header .headerClass .float1 span button img {
+    width: 7vw;
+  }
+  body header .headerClass .float1 span .dropdown button {
+    margin-left: 2vw;
+  }
+  body header .headerClass .float1 span .dropdown button i {
+    font-size: 6vw;
+  }
   body header .headerClass .float2 span:nth-child(2) {
     display: none;
+  }
+  body header .headerClass .float2 span .logoid {
+    font-size: 7vw;
+  }
+  body header .headerClass .float2 span .logoid img {
+    width: 8vw;
+  }
+  body header .headerClass .float2 span button i {
+    font-size: 5vw;
+  }
+  body header .headerClass .float2 span .rightMenu button i {
+    font-size: 7vw;
+  }
+  body header .headerClass .float2 span .rightMenu .offcanvas .offcanvas-body .insideBody a {
+    font-size: 2vw;
   }
 }/*# sourceMappingURL=style.css.map */
