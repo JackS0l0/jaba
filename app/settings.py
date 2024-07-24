@@ -2,6 +2,7 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e6=+k7#uxx37bsk(tl*78=+s5e5uj-^^4^bz#0%7&t-#73t+u&'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 DEBUG = True
 ALLOWED_HOSTS = ["vercel.app","*"]
 INSTALLED_APPS = [

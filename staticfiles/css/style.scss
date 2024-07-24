@@ -699,9 +699,60 @@ body.night-mode{
     body {
         header{
             .headerClass{
+                .float0{
+                    a{
+                        font-size: 2vw;
+                    }
+                }
+                .float1{
+                    span{
+                        button{
+                            img{
+                                width: 7vw;
+                            }
+                        }
+                        .dropdown{
+                            button{
+                                margin-left: 2vw;
+                                i{
+                                    font-size: 6vw;
+                                }
+                            }
+                        }
+                    }
+                }
                 .float2{
                     span:nth-child(2){
                         display: none;
+                    }
+                    span{
+                        .logoid{
+                            img{
+                                width: 8vw;
+                            }
+                            font-size: 7vw;
+                        }
+                        button{
+                            i{
+                                font-size: 5vw;
+                            }
+                        }
+                        .rightMenu{
+                            button{
+                                i{
+                                    font-size: 7vw;
+                                }
+                            }
+                            .offcanvas{
+                                .offcanvas-body{
+                                    .insideBody{
+                                        a{
+                                            font-size: 2vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
