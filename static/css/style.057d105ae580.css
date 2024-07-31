@@ -665,18 +665,6 @@ body.night-mode main .mainClass .postClass .ttClass .questionsBlock a {
     font-size: 7vw;
   }
   body header .headerClass .float2 span .rightMenu .offcanvas .offcanvas-body .insideBody a {
-    font-size: 3vw;
+    font-size: 2vw;
   }
-  body main .mainClass .headerNews .block1 {
-    height: 31vh;
-  }
-  body main .mainClass .headerNews .block2 .float1 {
-    height: 15vh;
-  }
-  body main .mainClass .headerNews .block2 .float2 {
-    height: 15vh;
-  }
-  body main .mainClass .headerNews .block2 .float2 .box {
-    height: auto;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.057d105ae580.css.map */

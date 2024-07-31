@@ -747,10 +747,30 @@ body.night-mode{
                                 .offcanvas-body{
                                     .insideBody{
                                         a{
-                                            font-size: 2vw;
+                                            font-size: 3vw;
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            .mainClass{
+                .headerNews{
+                    .block1{
+                        height: 31vh;
+                    }
+                    .block2{
+                        .float1{
+                            height: 15vh;
+                        }
+                        .float2{
+                            height: 15vh;
+                            .box{
+                                height: auto;
                             }
                         }
                     }
